@@ -178,6 +178,7 @@ footer a {
     flex-flow: column;
     align-items: stretch;
     justify-content: flex-start;
+    padding: 0px;
   }
 
   nav a {
