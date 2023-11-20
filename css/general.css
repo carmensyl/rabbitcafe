@@ -117,7 +117,6 @@ nav ul li a:hover:not(.active) {
 /* photo gallery css starts */
 .gallery {
   display: flex;
-  align-items: left;
   flex-flow: row wrap;
   justify-content: center;
   margin-bottom: 5rem;
