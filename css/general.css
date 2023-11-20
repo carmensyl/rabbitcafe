@@ -163,3 +163,49 @@ footer a {
   text-decoration: none;
   color: white;
 }
+
+@media only screen and (max-width: 600px) {
+  body {
+    width: 100%;
+  }
+
+  .sticky + .content {
+    padding-top: 22rem;
+  }
+
+  nav ul{
+    display: flex;
+    flex-flow: column;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+
+  nav a {
+    display: block;
+    margin: 0;
+  }
+
+  nav ul li a:hover:not(.active) {
+    background-color: #DFABAB;
+    border-radius: 0px;
+  }
+  
+  .active {
+    background-color: #FCDFDF;
+    border-radius: 0px;
+    display: block;
+    margin: 0;
+  }
+
+  video {
+    width: 90%;
+    height: auto;
+    margin-top: 2rem;
+  }
+
+  .about {
+    width: 90%;
+  }
+
+
+}
