@@ -1,0 +1,165 @@
+body {
+    text-align: center;
+    background-color: #FCDFDF;
+    color: #5F4949;
+    margin: 0px;
+    font-family: Arial;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+button {
+  background-color:#5F4949;
+  border: none;
+  color:  white;
+  border-radius: 1rem;
+  padding: 0.6rem 1rem;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 6rem;
+}
+
+button:hover {
+  background-color:#DFABAB;
+  color: #5F4949;
+}
+
+/* sticky logo & nav bar starts*/
+.logo-div {
+    background-color: white;
+    margin: 0px;
+    display: block;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 10rem;
+}
+/* sticky logo & nav bar ends */
+
+/* nav bar css starts */
+nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;  
+    list-style-type: none;
+    margin: 0;
+    padding: 9px 16px;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+nav ul li {
+    align-items: baseline; 
+  }
+  
+nav ul li a {
+    align-items: baseline;   
+    color:#5F4949;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+  }
+  
+nav ul li a:hover:not(.active) {
+    background-color: #DFABAB;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+.active {
+    background-color: #FCDFDF;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+/* nav bar css ends */
+
+.content {
+  margin: auto;
+  text-align: center;
+}
+
+.about {
+  width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.orderlist {
+  display: inline-block;
+  text-align: left;
+}
+
+.rule {
+  padding: 0.3rem;
+  font-size: 1.2rem;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.menu h3 {
+  padding: 0 1.6rem 1rem 1.6rem;
+  border-bottom-style: dotted;
+}
+
+/* photo gallery css starts */
+.gallery {
+  display: flex;
+  align-items: left;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.card-container {
+  width: 380px;
+  border-radius: 15px;
+  padding: 30px;
+  margin: 20px;
+  box-shadow: 6px 6px 8px #DFABAB;
+  background-color: white;
+}
+
+.card-container img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+    
+}
+
+.info-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 10rem;
+  margin: auto;
+}
+
+.rabbit-desc {
+  width: 20rem;
+  margin: auto;
+}
+/* photo gallery css ends */
+
+footer {
+  background-color: #DFABAB;
+  color: white;
+  margin: 0px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}

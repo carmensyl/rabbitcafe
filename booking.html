@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rabit Cafe - Booking</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.svg">
+    <link rel="stylesheet" href="css/general.css">
+    <style>
+    .form-wrapper {
+        width: 500px;
+        margin: 0 auto;
+        padding: 50px;
+      }
+      
+      div.elem-group {
+        margin: 20px 0;
+      }
+      
+      div.elem-group.inlined {
+        width: 49%;
+        display: inline-block;
+        float: left;
+        margin-left: 1%;
+      }
+      
+      label {
+        display: block;
+        font-family: 'Nanum Gothic';
+        padding-bottom: 10px;
+        font-size: 1.25em;
+      }
+      
+      input, select, textarea {
+        border-radius: 2px;
+        border: 2px solid #777;
+        box-sizing: border-box;
+        font-size: 1.25em;
+        font-family: 'Nanum Gothic';
+        width: 100%;
+        padding: 10px;
+      }
+      
+      div.elem-group.inlined input {
+        width: 95%;
+        display: inline-block;
+      }
+      
+      textarea {
+        height: 250px;
+      }
+      
+      hr {
+        border: 1px dotted #ccc;
+      }
+      
+
+    </style>
+</head>
+<body>
+<div class="sticky">
+  <div class="logo-div">
+    <img class="logo" src="images/logo.svg" width="150" alt="Rabbit Cafe Logo">
+</div>
+<!-- nav bar starts -->
+ <nav>
+     <ul>
+         <li><a href="index.html">Home</a></li>
+         <li><a href="menu.html">Menu</a></li>
+         <li><a class="active" href="booking.html">Booking</a></li>
+         <li><a href="about_us.html">About Us</a></li>
+         <li><a href="rabbits.html">Rabbits</a></li>
+     </ul>
+ </nav>
+<!-- nav bar ends -->
+</div>
+
+<div class="content form-wrapper">  
+    <h1>Booking</h1>
+    <h3>Reservation is available srating from 1 day to 3 months before visit.</h3><br>
+    <p style="text-align: left;font-size: 1rem;"><span style="color:red;">*</span>required fields</p>
+<!-- Form starts -->
+    <form>
+        <div class="elem-group">
+          <label for="name" style="text-align: left;">Your Name<span style="color:red;">*</span></label>
+          <input type="text" id="name" name="visitor_name" placeholder="Your Name" pattern=[A-Z\sa-z]{3,20} required>
+        </div>
+        <div class="elem-group">
+          <label for="email" style="text-align: left;">Your E-mail</label>
+          <input type="email" id="email" name="visitor_email" placeholder="Your Email">
+        </div>
+        <div class="elem-group">
+          <label for="phone" style="text-align: left;">Your Phone<span style="color:red;">*</span></label>
+          <input type="tel" id="phone" name="visitor_phone" placeholder="Your Phone" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+        </div>
+        <hr>
+        <div class="elem-group inlined">
+          <label for="adult" style="text-align: left;">Adults<span style="color:red;">*</span></label>
+          <input type="number" id="adult" name="total_adults" value="2" min="1" required>
+        </div>
+        <div class="elem-group inlined">
+          <label for="child" style="text-align: left;">Children<span style="color:red;">*</span><span style="color:blue;">#</span></label>
+          <input type="number" id="child" name="total_children" value="0" min="0" required>
+        </div>
+        <div class="elem-group inlined">
+          <label for="date" style="text-align: left;">Date<span style="color:red;">*</span></label>
+          <input type="date" id="date" name="date" required>
+        </div>
+        <div class="elem-group inlined">
+            <label for="time" style="text-align: left;">Time<span style="color:red;">*</span></label>
+            <input type="time" id="time" name="time" required>
+          </div>
+        <p style="text-align: left;"><span style="color:blue;">#</span> Please note that each adult can only accompany with 2 children at most, thanks.</p>
+        <hr>
+        <div class="elem-group">
+          <label for="message" style="text-align: left;">Anything Else?</label>
+          <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important."></textarea>
+        </div>
+        <button type="submit">Book The Seat</button>
+      </form>
+<!-- form ends -->
+<h2>Remember to check out our rules.</h2>
+    <a href="about_us.html"><button>Go</button></a>
+</div>
+<footer>
+  <p style="margin: 0px; padding: 1rem;"><a href="booking.html">Make Reservation</a> | 1234 SUN STREET, BURNABY | 1-234-567-8899<br>
+  </p>
+</footer>     
+</body>
+</html>
